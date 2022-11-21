@@ -63,6 +63,13 @@ All the instances can be managed via the shell terminal. Here are a some  useful
 * Connect to the created instance (Note the instance should be running otherwise one would get an error message) ``` gcloud compute ssh <instance name> ```
 
 
+### Jupyter configuration
+- Generate a jupyter configuration file : ``` jupyter notebook --generate-config ```
+- Create a password to access all the notebooks (**USE STRONG PASSWORD**)  ```jupyter notebook password```
+- Open the configuration : ```vim .jupyter/jupyter_notebook_config.py```
+- Add the following lines  (Switch to edit mode in vim, by typing the ```i``` character). Quit and save with the following sequence ```ESC:wq ```on Ubuntu and ```ESC:q ``` on Debian
+  - ``` c.NotebookApp.allow_origin = '*' ```
+  - ``` c.NotebookApp.ip = '0.0.0.0' ```
 
 
 
