@@ -5,7 +5,7 @@
 > For this step, you will have to put your payment information and verify your account (No, you will not be charged since google offers a 300$ credit for a free trial upon account creation. See more about the Google Cloud Free Program [here](https://cloud.google.com/free/docs/free-cloud-features)). If you fail this step, close your laptop and ponder where your life is going.
 
 
-After the google cloup product (GCP) account is created, 
+After the google cloud product (GCP) account is created, 
 
 ### Create a new project 
 1- Click on the three dots shown in the image below
@@ -66,8 +66,8 @@ All the instances can be managed via the shell terminal. Here are a some  useful
 ### Jupyter configuration
 - Generate a jupyter configuration file : ``` jupyter notebook --generate-config ```
 - Create a password to access all the notebooks (**USE STRONG PASSWORD**)  ```jupyter notebook password```
-- Open the configuration : ```vim .jupyter/jupyter_notebook_config.py```
-- Add the following lines  (Switch to edit mode in vim, by typing the ```i``` character). Quit and save with the following sequence ```ESC:wq ```on Ubuntu and ```ESC:q ``` on Debian
+- Open the configuration :  ```vim .jupyter/jupyter_notebook_config.py``` (Ubuntu) ```sudo vim .jupyter/jupyter_notebook_config.py``` (Debian)
+- Add the following lines  (Switch to edit mode in vim, by typing the ```i``` character). Quit and save with the following sequence ```ESC:wq ```
   - ``` c.NotebookApp.allow_origin = '*' ```
   - ``` c.NotebookApp.ip = '0.0.0.0' ```
 
