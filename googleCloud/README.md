@@ -57,6 +57,8 @@ This terminal runs on a f1-micro Google Compute Engine virtual machine with a De
 
 All the instances can be managed via the shell terminal. Here are a some  useful commands
 
+
+* Select a project ``` gcloud config set project <project name> ```
 * List all the instances ```gcloud compute instances list  ```  
 * Stop the instance (might take a few seconds) ``` gcloud compute instances stop <instance name> ```
 * Start the instance (might take a few seconds) ``` gcloud compute instances start <instance name>```
